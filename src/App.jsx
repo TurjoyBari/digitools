@@ -8,6 +8,7 @@ import Models from "./component/Models";
 import Cart from "./component/Cart";
 import { useState } from "react";
 
+
 const getModels = async () => {
   const res = await fetch("/models.json");
   return res.json();
@@ -57,7 +58,7 @@ function App() {
           type="radio"
           name="my_tabs_1"
           className="tab rounded-full pr-6 pl-6"
-          aria-label="Cart"
+          aria-label={`Cart (${carts.length})`}
           onClick= {()=> setActiveTab("cart")}
           
         />

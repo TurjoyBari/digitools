@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { toast } from "react-toastify";
 
 const ModelCard = ({model, carts , setCarts}) => {
     const [isBuy , setIsBuy] = useState(false)
@@ -6,6 +7,8 @@ const ModelCard = ({model, carts , setCarts}) => {
     const hendelBuy = () =>{
         setIsBuy(true);
         setCarts([...carts,model]);
+
+        toast.success("Item Add To Card");
     }
 
   return (
