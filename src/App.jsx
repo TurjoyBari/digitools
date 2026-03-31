@@ -4,6 +4,8 @@
 import './App.css'
 import Banner from './component/Banner'
 import NavBar from './component/NavBar'
+import CountDown from './component/CountDown';
+
 
 function App() {
 
@@ -13,6 +15,8 @@ function App() {
       <NavBar></NavBar>
 
       <Banner></Banner>
+
+      <CountDown></CountDown>
       
     </>
   )
