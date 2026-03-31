@@ -7,7 +7,7 @@ const NavBar = () => {
     <div className="navbar max-w-7xl mx-auto pt-4 pb-4 items-center justify-center">
       <div className="navbar-start">
         <div className="flex items-center gap-1 font-bold text-xl">
-          <span class="text-4xl font-extrabold bg-gradient-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent pb-4">DigiTools</span>
+          <span className="text-4xl font-extrabold bg-gradient-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent pb-4">DigiTools</span>
         </div>
       </div>
       <div className="navbar-center hidden md:flex">

@@ -1,0 +1,152 @@
+[
+  {
+    "id": 1,
+    "name": "AI Writing Pro",
+    "description": "Generate high-quality content in seconds\nPerfect for blogs, ads, and marketing copy",
+    "price": 29,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "best seller",
+    "features": [
+      "Unlimited AI generations",
+      "50+ writing templates",
+      "Grammar checker"
+    ],
+    "icon": "https://cdn-icons-png.flaticon.com/512/2921/2921222.png"
+  },
+  {
+    "id": 2,
+    "name": "CopyGenius AI",
+    "description": "Create engaging marketing copy instantly\nBoost conversions with AI-powered writing",
+    "price": 19,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "Ad copy generator",
+      "SEO optimization",
+      "Multi-language support"
+    ],
+    "icon": "https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+  },
+  {
+    "id": 3,
+    "name": "ChatSmart AI",
+    "description": "Smart AI chatbot for daily productivity\nAnswer questions and automate tasks easily",
+    "price": 0,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "Conversational AI",
+      "Task automation",
+      "API integration"
+    ],
+    "icon": "https://cdn-icons-png.flaticon.com/512/4712/4712027.png"
+  },
+  {
+    "id": 4,
+    "name": "Designify AI",
+    "description": "Create stunning designs without skills\nAI-powered templates for social media and ads",
+    "price": 15,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "Drag-and-drop editor",
+      "100+ templates",
+      "Background remover"
+    ],
+    "icon": "https://cdn-icons-png.flaticon.com/512/1828/1828919.png"
+  },
+  {
+    "id": 5,
+    "name": "CodeAssist AI",
+    "description": "Write and debug code faster with AI\nSupports multiple programming languages",
+    "price": 25,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "best seller",
+    "features": [
+      "Code auto-completion",
+      "Bug detection",
+      "Multi-language support"
+    ],
+    "icon": "https://cdn-icons-png.flaticon.com/512/2721/2721297.png"
+  },
+  {
+    "id": 6,
+    "name": "VideoGen AI",
+    "description": "Create videos from text in minutes\nNo editing skills required",
+    "price": 20,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "Text-to-video",
+      "Auto subtitles",
+      "Stock media library"
+    ],
+    "icon": "https://cdn-icons-png.flaticon.com/512/1384/1384060.png"
+  },
+  {
+    "id": 7,
+    "name": "VoiceClone AI",
+    "description": "Generate realistic voiceovers instantly\nClone voices with high accuracy",
+    "price": 18,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "Voice cloning",
+      "Text-to-speech",
+      "Multi-language voices"
+    ],
+    "icon": "https://cdn-icons-png.flaticon.com/512/727/727269.png"
+  },
+  {
+    "id": 8,
+    "name": "ResumeBoost AI",
+    "description": "Build professional resumes quickly\nOptimize for ATS and job success",
+    "price": 10,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "best seller",
+    "features": [
+      "ATS optimization",
+      "Modern templates",
+      "PDF export"
+    ],
+    "icon": "https://cdn-icons-png.flaticon.com/512/3135/3135768.png"
+  },
+  {
+    "id": 9,
+    "name": "SEO Master AI",
+    "description": "Improve your website ranking easily\nAI-powered keyword and content optimization",
+    "price": 22,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "Keyword research",
+      "Content optimization",
+      "Competitor analysis"
+    ],
+    "icon": "https://cdn-icons-png.flaticon.com/512/3063/3063822.png"
+  },
+  {
+    "id": 10,
+    "name": "ImageGen AI",
+    "description": "Generate stunning images with AI\nPerfect for social media and branding",
+    "price": 12,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "Text-to-image",
+      "High resolution output",
+      "Style customization"
+    ],
+    "icon": "https://cdn-icons-png.flaticon.com/512/921/921347.png"
+  }
+]
