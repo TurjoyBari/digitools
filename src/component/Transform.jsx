@@ -4,7 +4,7 @@ import { Play } from "lucide-react";
 const Transform = () => {
   return (
     <div className="bg-gradient-to-r from-[#4F39F6] to-[#9514FA] border-none  text-white pt-15 pb-15 ">
-      <div className="flex flex-col items-center justify-around max-w-7xl mx-auto w-full">
+      <div className="flex flex-col items-center justify-around max-w-7xl mx-auto w-full pb-30">
         {/* <div className="  place-items-center">
           <div className="flex flex-col items-center gap-2">
             <h1 className="font-extrabold text-6xl ">50K+</h1>

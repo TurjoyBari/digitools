@@ -12,7 +12,6 @@ import Pricing from "./component/Pricing";
 import Transform from "./component/Transform";
 import Footer from "./component/Footer";
 
-
 const getModels = async () => {
   const res = await fetch("/models.json");
   return res.json();
@@ -20,19 +19,14 @@ const getModels = async () => {
 
 const modelPromise = getModels();
 
-
-
-
 function App() {
-  
-  const [activeTab , setActiveTab] = useState("products")
-  
-  const [carts , setCarts] = useState([])
-  
+  const [activeTab, setActiveTab] = useState("products");
+
+  const [carts, setCarts] = useState([]);
 
   return (
     <>
-      <NavBar></NavBar>
+      <NavBar carts={carts}></NavBar>
 
       <Banner></Banner>
 
@@ -49,7 +43,7 @@ function App() {
       </div>
 
       {/* name of each tab group should be unique */}
-      <div className="tabs tabs-box gap-3 bg-transparent border-none justify-center items-center pb-10">
+      {/* <div className="tabs tabs-box gap-3 bg-transparent border-none justify-center items-center pb-10">
         <input
           type="radio"
           name="my_tabs_1"
@@ -67,9 +61,39 @@ function App() {
           
         />
         
+      </div> */}
+      <div className="tabs tabs-box gap-3 bg-transparent border-none justify-center items-center pb-10">
+        <input
+          type="radio"
+          name="my_tabs_1"
+          className={`tab rounded-full px-8 font-bold text-[15px] ${
+            activeTab === "products"
+              ? "bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white"
+              : "bg-transparent"
+          }`}
+          aria-label="Products"
+          onClick={() => setActiveTab("products")}
+          defaultChecked
+        />
+
+        <input
+          type="radio"
+          name="my_tabs_1"
+          className={`tab rounded-full px-8 font-bold text-[15px] ${
+            activeTab === "cart" ? "bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white" : "bg-transparent"
+          }`}
+          aria-label={`Cart (${carts.length})`}
+          onClick={() => setActiveTab("cart")}
+        />
       </div>
 
-      {activeTab == "products" && <Models modelPromise={modelPromise} carts={carts} setCarts={setCarts}></Models>}
+      {activeTab == "products" && (
+        <Models
+          modelPromise={modelPromise}
+          carts={carts}
+          setCarts={setCarts}
+        ></Models>
+      )}
 
       {activeTab == "cart" && <Cart carts={carts} setCarts={setCarts}></Cart>}
 

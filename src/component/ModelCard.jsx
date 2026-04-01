@@ -1,25 +1,38 @@
 import React, { useState } from "react";
 import { toast } from "react-toastify";
 
-const ModelCard = ({model, carts , setCarts}) => {
-    const [isBuy , setIsBuy] = useState(false)
+const ModelCard = ({ model, carts, setCarts }) => {
+  const [isBuy, setIsBuy] = useState(false);
 
-    const hendelBuy = () =>{
-        setIsBuy(true);
-        setCarts([...carts,model]);
+  const hendelBuy = () => {
+    setIsBuy(true);
+    setCarts([...carts, model]);
 
-        toast.success("Item Add To Card");
-    }
+    toast.success("Item Add To Card");
+  };
 
   return (
     <div className="">
       <div className="card w-96 bg-base-100 shadow-lg ">
         <div className="card-body">
-          <div className="flex justify-between items-center">
+          <div className="flex justify-between items-center pb-3">
             <div className=" p-1.5 border border-[#CCCCCC] rounded-full">
               <img src={model.icon} className="w-8 h-8 " alt="" />
             </div>
-            <span className="badge badge-xs badge-warning">{model.tag}</span>
+            
+            <span
+              className={`badge badge-xs p-4 rounded-full text-[14px] font-bold ${
+                model.tagType === "popular"
+                  ? "badge-soft badge-primary"
+                  : model.tagType === "new"
+                    ? "badge-soft badge-success"
+                    : model.tagType === "best seller"
+                      ? "badge-soft badge-warning"
+                      : ""
+              }`}
+            >
+              {model.tag}
+            </span>
           </div>
           <div className="flex flex-col gap-4">
             <h2 className="text-2xl font-bold text-[#101727]">{model.name}</h2>
@@ -85,7 +98,10 @@ const ModelCard = ({model, carts , setCarts}) => {
             </li>
           </ul>
           <div className="mt-6">
-            <button onClick={hendelBuy} className="btn btn-primary btn-block bg-gradient-to-r from-[#4F39F6] to-[#9514FA] border-none rounded-full text-white">
+            <button
+              onClick={hendelBuy}
+              className="btn btn-primary btn-block bg-gradient-to-r from-[#4F39F6] to-[#9514FA] border-none rounded-full text-white"
+            >
               {isBuy ? "Check Out" : "Buy Now"}
             </button>
           </div>
