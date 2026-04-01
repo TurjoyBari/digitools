@@ -14,7 +14,7 @@ const ModelCard = ({model, carts , setCarts}) => {
   return (
     <div className="">
       <div className="card w-96 bg-base-100 shadow-lg ">
-        <div className="card-body ">
+        <div className="card-body">
           <div className="flex justify-between items-center">
             <div className=" p-1.5 border border-[#CCCCCC] rounded-full">
               <img src={model.icon} className="w-8 h-8 " alt="" />

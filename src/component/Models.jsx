@@ -8,7 +8,7 @@ const Models = ({ modelPromise , carts , setCarts }) => {
   return (
     <div className="">
       
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto justify-center gap-7 ">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto justify-center gap-7 pb-30">
         {models.map((model) => (
           <ModelCard key={model.id} model={model} carts={carts} setCarts={setCarts}></ModelCard>
         ))}

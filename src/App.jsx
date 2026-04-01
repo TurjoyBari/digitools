@@ -8,6 +8,7 @@ import Models from "./component/Models";
 import Cart from "./component/Cart";
 import { useState } from "react";
 import Started from "./component/Started";
+import Pricing from "./component/Pricing";
 
 
 const getModels = async () => {
@@ -71,6 +72,8 @@ function App() {
       {activeTab == "cart" && <Cart carts={carts} setCarts={setCarts}></Cart>}
 
       <Started></Started>
+
+      <Pricing></Pricing>
     </>
   );
 }

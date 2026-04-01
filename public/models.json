@@ -148,5 +148,35 @@
       "Style customization"
     ],
     "icon": "https://cdn-icons-png.flaticon.com/512/921/921347.png"
+  },
+  {
+    "id": 11,
+    "name": "EmailCraft AI",
+    "description": "Write professional emails effortlessly\nBoost open rates with AI suggestions",
+    "price": 8,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "Email templates",
+      "Tone adjustment",
+      "Spam score checker"
+    ],
+    "icon": "https://cdn-icons-png.flaticon.com/512/561/561127.png"
+  },
+  {
+    "id": 12,
+    "name": "SocialBoost AI",
+    "description": "Grow your social media faster\nAutomate posts and engagement with AI",
+    "price": 17,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "best seller",
+    "features": [
+      "Post scheduling",
+      "Hashtag generator",
+      "Analytics dashboard"
+    ],
+    "icon": "https://cdn-icons-png.flaticon.com/512/733/733547.png"
   }
 ]
