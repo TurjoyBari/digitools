@@ -9,6 +9,8 @@ import Cart from "./component/Cart";
 import { useState } from "react";
 import Started from "./component/Started";
 import Pricing from "./component/Pricing";
+import Transform from "./component/Transform";
+import Footer from "./component/Footer";
 
 
 const getModels = async () => {
@@ -74,6 +76,10 @@ function App() {
       <Started></Started>
 
       <Pricing></Pricing>
+
+      <Transform></Transform>
+
+      <Footer></Footer>
     </>
   );
 }
